@@ -217,7 +217,7 @@ export function MemberData() {
               name="imgUri"
               value={formData.imgUri}
               onChange={handleInputChange}
-              placeholder="Drive link of the member's image"
+              placeholder="Cloudinary link of the member's image"
               required
             />
           </Field>

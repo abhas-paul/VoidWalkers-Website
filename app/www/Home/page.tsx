@@ -47,7 +47,7 @@ export default function Page() {
 
                             <button
                                 className="cursor-pointer w-full sm:w-auto px-12 py-4 border border-white/20 text-white font-medium rounded-full hover:bg-white/10 hover:border-white transition-all duration-300 backdrop-blur-md"
-                                onClick={() => router.push("/www/About")}
+                                onClick={() => router.push("#About")}
                             >
                                 Learn More
                             </button>
@@ -67,7 +67,7 @@ export default function Page() {
                     <AnimatedFoundersUse />
                 </div>
             </section>
-            <section
+            <section id="About"
                 className="
     min-h-screen
     bg-black

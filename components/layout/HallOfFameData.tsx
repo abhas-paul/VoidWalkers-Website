@@ -156,7 +156,7 @@ export function HallOfFameData() {
               name="imguri"
               value={formData.imguri}
               onChange={handleInputChange}
-              placeholder="Drive link of the respective image"
+              placeholder="Cloudinary link of the respective image"
               required
             />
           </Field>

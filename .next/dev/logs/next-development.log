@@ -1,0 +1,1004 @@
+[00:00:01.110] Server  WARN    ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+[00:00:01.193] Server  LOG     ✓ Ready in 882ms
+[00:00:03.097] Server  ERROR   ⨯ Error: Your project's URL and Key are required to create a Supabase client!
+
+Check your Supabase project's API settings to find these values
+
+https://supabase.com/dashboard/project/_/settings/api
+[00:00:05.215] Browser ERROR   uncaughtError: Error: Your project's URL and Key are required to create a Supabase client!
+
+Check your Supabase project's API settings to find these values
+
+https://supabase.com/dashboard/project/_/settings/api
+[00:01:00.914] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:00.914] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <Page params={Promise} searchParams={Promise}>
+      <div className="w-full">
+        <section>
+        <section className="relative w...">
+          <div className="max-w-6xl ...">
+            <h2>
+            <AnimatedFoundersUse>
+              <AnimatedFounders testimonials={[...]}>
+                <div className="max-w-sm m...">
+                  <div className="relative g...">
+                    <div>
+                      <div className="relative h...">
+                        <AnimatePresence>
+                          <PresenceChild isPresent={true} initial={undefined} custom={undefined} ...>
+                            <motion.div initial={{opacity:0, ...}} animate={{opacity:1,scale:1,z:0, ...}} ...>
+                              <div
+                                className="absolute inset-0 origin-bottom"
+                                style={{
++                                 opacity: 0
+-                                 opacity: "0"
++                                 transform: "translateZ(-100px) scale(0.9) rotate(-4deg)"
+-                                 transform: "translateZ(-100px) scale(0.9) rotate(-5deg)"
+                                }}
+                                ref={function useMotionRef.useCallback}
+                              >
+                          <PresenceChild isPresent={true} initial={undefined} custom={undefined} ...>
+                            <motion.div initial={{opacity:0, ...}} animate={{opacity:0.7, ...}} exit={{opacity:0, ...}} ...>
+                              <div
+                                className="absolute inset-0 origin-bottom"
+                                style={{
++                                 opacity: 0
+-                                 opacity: "0"
++                                 transform: "translateZ(-100px) scale(0.9) rotate(3deg)"
+-                                 transform: "translateZ(-100px) scale(0.9) rotate(-1deg)"
+                                }}
+                                ref={function useMotionRef.useCallback}
+                              >
+                          <PresenceChild isPresent={true} initial={undefined} custom={undefined} ...>
+                            <motion.div initial={{opacity:0, ...}} animate={{opacity:0.7, ...}} exit={{opacity:0, ...}} ...>
+                              <div
+                                className="absolute inset-0 origin-bottom"
+                                style={{
++                                 opacity: 0
+-                                 opacity: "0"
++                                 transform: "translateZ(-100px) scale(0.9)"
+-                                 transform: "translateZ(-100px) scale(0.9) rotate(-6deg)"
+                                }}
+                                ref={function useMotionRef.useCallback}
+                              >
+                    ...
+        ...
+
+[00:01:34.418] Server  LOG     ✓ Compiled in 55ms
+[00:01:34.726] Browser ERROR   Received `%s` for a non-boolean attribute `%s`.
+
+If you want to write it to the DOM, pass a string instead: %s="%s" or %s={value.toString()}. true id id true id
+[00:01:35.046] Server  LOG     ✓ Compiled in 41ms
+[00:01:37.716] Server  LOG     ✓ Compiled in 72ms
+[00:01:39.194] Server  LOG     ✓ Compiled in 38ms
+[00:01:50.583] Server  LOG     ✓ Compiled in 67ms
+[00:01:51.828] Server  LOG     ✓ Compiled in 93ms
+[00:01:52.433] Browser ERROR   Received `%s` for a non-boolean attribute `%s`.
+
+If you want to write it to the DOM, pass a string instead: %s="%s" or %s={value.toString()}. true on on true on
+[00:01:52.968] Server  LOG     ✓ Compiled in 55ms
+[00:01:53.292] Browser ERROR   Unknown event handler property `%s`. It will be ignored. onclocl
+[00:01:53.968] Server  LOG     ✓ Compiled in 46ms
+[00:01:54.294] Browser ERROR   Unknown event handler property `%s`. It will be ignored. onclic
+[00:01:55.002] Server  LOG     ✓ Compiled in 51ms
+[00:01:55.225] Browser ERROR   ./app/www/Home/page.tsx:51:29
+Parsing ecmascript source code failed
+  49 |                                 className="cursor-pointer w-full sm:w-auto px-12 py-4 border border-white/20 text-white font-medium rounded-full hover:bg-white/10 hover:border-white transition-all duration-300 backdrop-blur-md"
+  50 |                                 onClick={}
+> 51 |                             >
+     |                             ^
+  52 |                                 Learn More
+  53 |                             </button>
+  54 |                         </div>
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./app/www/Home/page.tsx [Client Component Browser]
+    ./app/www/Home/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/www/Home/page.tsx [Client Component SSR]
+    ./app/www/Home/page.tsx [Server Component]
+[00:01:56.889] Server  LOG     ✓ Compiled in 69ms
+[00:01:58.286] Browser ERROR   uncaughtError: ReferenceError: re is not defined
+[00:02:00.109] Server  LOG     ✓ Compiled in 46ms
+[00:02:00.460] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:02:00.637] Server  ERROR   Received `true` for a non-boolean attribute `o`.
+
+If you want to write it to the DOM, pass a string instead: o="true" or o={value.toString()}.
+[00:02:04.891] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:04.891] Browser ERROR   Received `%s` for a non-boolean attribute `%s`.
+
+If you want to write it to the DOM, pass a string instead: %s="%s" or %s={value.toString()}. true o o true o
+[00:02:04.891] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <Page params={Promise} searchParams={Promise}>
+      <div className="w-full">
+        <section>
+        <section className="relative w...">
+          <div className="max-w-6xl ...">
+            <h2>
+            <AnimatedFoundersUse>
+              <AnimatedFounders testimonials={[...]}>
+                <div className="max-w-sm m...">
+                  <div className="relative g...">
+                    <div>
+                      <div className="relative h...">
+                        <AnimatePresence>
+                          <PresenceChild isPresent={true} initial={undefined} custom={undefined} ...>
+                            <motion.div initial={{opacity:0, ...}} animate={{opacity:1,scale:1,z:0, ...}} ...>
+                              <div
+                                className="absolute inset-0 origin-bottom"
+                                style={{
++                                 opacity: 0
+-                                 opacity: "0"
++                                 transform: "translateZ(-100px) scale(0.9) rotate(7deg)"
+-                                 transform: "translateZ(-100px) scale(0.9) rotate(-9deg)"
+                                }}
+                                ref={function useMotionRef.useCallback}
+                              >
+                          <PresenceChild isPresent={true} initial={undefined} custom={undefined} ...>
+                            <motion.div initial={{opacity:0, ...}} animate={{opacity:0.7, ...}} exit={{opacity:0, ...}} ...>
+                              <div
+                                className="absolute inset-0 origin-bottom"
+                                style={{
++                                 opacity: 0
+-                                 opacity: "0"
++                                 transform: "translateZ(-100px) scale(0.9) rotate(-10deg)"
+-                                 transform: "translateZ(-100px) scale(0.9) rotate(3deg)"
+                                }}
+                                ref={function useMotionRef.useCallback}
+                              >
+                          <PresenceChild isPresent={true} initial={undefined} custom={undefined} ...>
+                            <motion.div initial={{opacity:0, ...}} animate={{opacity:0.7, ...}} exit={{opacity:0, ...}} ...>
+                              <div
+                                className="absolute inset-0 origin-bottom"
+                                style={{
++                                 opacity: 0
+-                                 opacity: "0"
++                                 transform: "translateZ(-100px) scale(0.9) rotate(3deg)"
+-                                 transform: "translateZ(-100px) scale(0.9) rotate(-1deg)"
+                                }}
+                                ref={function useMotionRef.useCallback}
+                              >
+                    ...
+        ...
+
+[00:02:13.679] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:13.679] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <Page params={Promise} searchParams={Promise}>
+      <div className="w-full">
+        <section>
+        <section className="relative w...">
+          <div className="max-w-6xl ...">
+            <h2>
+            <AnimatedFoundersUse>
+              <AnimatedFounders testimonials={[...]}>
+                <div className="max-w-sm m...">
+                  <div className="relative g...">
+                    <div>
+                      <div className="relative h...">
+                        <AnimatePresence>
+                          <PresenceChild isPresent={true} initial={undefined} custom={undefined} ...>
+                            <motion.div initial={{opacity:0, ...}} animate={{opacity:1,scale:1,z:0, ...}} ...>
+                              <div
+                                className="absolute inset-0 origin-bottom"
+                                style={{
++                                 opacity: 0
+-                                 opacity: "0"
++                                 transform: "translateZ(-100px) scale(0.9) rotate(-5deg)"
+-                                 transform: "translateZ(-100px) scale(0.9)"
+                                }}
+                                ref={function useMotionRef.useCallback}
+                              >
+                          <PresenceChild isPresent={true} initial={undefined} custom={undefined} ...>
+                            <motion.div initial={{opacity:0, ...}} animate={{opacity:0.7, ...}} exit={{opacity:0, ...}} ...>
+                              <div
+                                className="absolute inset-0 origin-bottom"
+                                style={{
++                                 opacity: 0
+-                                 opacity: "0"
++                                 transform: "translateZ(-100px) scale(0.9) rotate(5deg)"
+-                                 transform: "translateZ(-100px) scale(0.9) rotate(1deg)"
+                                }}
+                                ref={function useMotionRef.useCallback}
+                              >
+                          <PresenceChild isPresent={true} initial={undefined} custom={undefined} ...>
+                            <motion.div initial={{opacity:0, ...}} animate={{opacity:0.7, ...}} exit={{opacity:0, ...}} ...>
+                              <div
+                                className="absolute inset-0 origin-bottom"
+                                style={{
++                                 opacity: 0
+-                                 opacity: "0"
++                                 transform: "translateZ(-100px) scale(0.9) rotate(4deg)"
+-                                 transform: "translateZ(-100px) scale(0.9) rotate(-2deg)"
+                                }}
+                                ref={function useMotionRef.useCallback}
+                              >
+                    ...
+        ...
+
+[00:06:40.151] Server  LOG     ✓ Compiled in 316ms
+[00:06:40.878] Server  LOG     ✓ Compiled in 50ms
+[00:06:43.703] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:44.159] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <Page params={Promise} searchParams={Promise}>
+      <div className="w-full">
+        <section>
+        <section className="relative w...">
+          <div className="max-w-6xl ...">
+            <h2>
+            <AnimatedFoundersUse>
+              <AnimatedFounders testimonials={[...]}>
+                <div className="max-w-sm m...">
+                  <div className="relative g...">
+                    <div>
+                      <div className="relative h...">
+                        <AnimatePresence>
+                          <PresenceChild isPresent={true} initial={undefined} custom={undefined} ...>
+                            <motion.div initial={{opacity:0, ...}} animate={{opacity:1,scale:1,z:0, ...}} ...>
+                              <div
+                                className="absolute inset-0 origin-bottom"
+                                style={{
++                                 opacity: 0
+-                                 opacity: "0"
++                                 transform: "translateZ(-100px) scale(0.9) rotate(2deg)"
+-                                 transform: "translateZ(-100px) scale(0.9) rotate(9deg)"
+                                }}
+                                ref={function useMotionRef.useCallback}
+                              >
+                          <PresenceChild isPresent={true} initial={undefined} custom={undefined} ...>
+                            <motion.div initial={{opacity:0, ...}} animate={{opacity:0.7, ...}} exit={{opacity:0, ...}} ...>
+                              <div
+                                className="absolute inset-0 origin-bottom"
+                                style={{
++                                 opacity: 0
+-                                 opacity: "0"
++                                 transform: "translateZ(-100px) scale(0.9) rotate(9deg)"
+-                                 transform: "translateZ(-100px) scale(0.9) rotate(-10deg)"
+                                }}
+                                ref={function useMotionRef.useCallback}
+                              >
+                          <PresenceChild isPresent={true} initial={undefined} custom={undefined} ...>
+                            <motion.div initial={{opacity:0, ...}} animate={{opacity:0.7, ...}} exit={{opacity:0, ...}} ...>
+                              <div
+                                className="absolute inset-0 origin-bottom"
+                                style={{
++                                 opacity: 0
+-                                 opacity: "0"
++                                 transform: "translateZ(-100px) scale(0.9) rotate(-6deg)"
+-                                 transform: "translateZ(-100px) scale(0.9) rotate(2deg)"
+                                }}
+                                ref={function useMotionRef.useCallback}
+                              >
+                    ...
+        ...
+
+[00:06:50.733] Server  LOG     ✓ Compiled in 62ms
+[00:06:54.146] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:54.146] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <Page params={Promise} searchParams={Promise}>
+      <div className="w-full">
+        <section>
+        <section className="relative w...">
+          <div className="max-w-6xl ...">
+            <h2>
+            <AnimatedFoundersUse>
+              <AnimatedFounders testimonials={[...]}>
+                <div className="max-w-sm m...">
+                  <div className="relative g...">
+                    <div>
+                      <div className="relative h...">
+                        <AnimatePresence>
+                          <PresenceChild isPresent={true} initial={undefined} custom={undefined} ...>
+                            <motion.div initial={{opacity:0, ...}} animate={{opacity:1,scale:1,z:0, ...}} ...>
+                              <div
+                                className="absolute inset-0 origin-bottom"
+                                style={{
++                                 opacity: 0
+-                                 opacity: "0"
++                                 transform: "translateZ(-100px) scale(0.9) rotate(-2deg)"
+-                                 transform: "translateZ(-100px) scale(0.9) rotate(1deg)"
+                                }}
+                                ref={function useMotionRef.useCallback}
+                              >
+                          <PresenceChild isPresent={true} initial={undefined} custom={undefined} ...>
+                            <motion.div initial={{opacity:0, ...}} animate={{opacity:0.7, ...}} exit={{opacity:0, ...}} ...>
+                              <div
+                                className="absolute inset-0 origin-bottom"
+                                style={{
++                                 opacity: 0
+-                                 opacity: "0"
++                                 transform: "translateZ(-100px) scale(0.9) rotate(-10deg)"
+-                                 transform: "translateZ(-100px) scale(0.9) rotate(9deg)"
+                                }}
+                                ref={function useMotionRef.useCallback}
+                              >
+                          <PresenceChild isPresent={true} initial={undefined} custom={undefined} ...>
+                            <motion.div initial={{opacity:0, ...}} animate={{opacity:0.7, ...}} exit={{opacity:0, ...}} ...>
+                              <div
+                                className="absolute inset-0 origin-bottom"
+                                style={{
++                                 opacity: 0
+-                                 opacity: "0"
++                                 transform: "translateZ(-100px) scale(0.9) rotate(-3deg)"
+-                                 transform: "translateZ(-100px) scale(0.9) rotate(-4deg)"
+                                }}
+                                ref={function useMotionRef.useCallback}
+                              >
+                    ...
+        ...
+
+[00:06:54.741] Server  LOG     ✓ Compiled in 35ms
+[00:07:09.586] Browser LOG     Fetched Hall of Fame data: []
+[00:07:09.719] Browser LOG     Fetched Hall of Fame data: []
+[00:08:37.139] Server  LOG     ✓ Compiled in 358ms
+[00:08:37.612] Browser ERROR   uncaughtError: ReferenceError: Link is not defined
+[00:08:44.075] Server  LOG     ✓ Compiled in 66ms
+[00:08:44.648] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:08:44.648] Browser ERROR   uncaughtError: ReferenceError: Link is not defined
+[00:08:45.052] Server  LOG     ✓ Compiled in 100ms
+[00:08:45.796] Server  ERROR   ⨯ ReferenceError: impo is not defined
+[00:08:45.835] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:08:45.835] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:08:46.193] Server  ERROR   ⨯ ReferenceError: impo is not defined
+[00:08:50.698] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:50.902] Browser ERROR   ./components/www/Landingpage/About/AboutContent.tsx:7:1
+Parsing ecmascript source code failed
+   5 | import Link from
+   6 |
+>  7 | export default function AboutContent() {
+     | ^^^^^^
+   8 |     return (
+   9 |         <div
+  10 |             className="
+
+Unexpected token `export`. Expected a string literal
+
+Import traces:
+  Client Component Browser:
+    ./components/www/Landingpage/About/AboutContent.tsx [Client Component Browser]
+    ./app/www/Home/page.tsx [Client Component Browser]
+    ./app/www/Home/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/www/Landingpage/About/AboutContent.tsx [Client Component SSR]
+    ./app/www/Home/page.tsx [Client Component SSR]
+    ./app/www/Home/page.tsx [Server Component]
+[00:08:50.939] Server  LOG     ✓ Compiled in 167ms
+[00:08:50.970] Browser ERROR   ./components/www/Landingpage/About/AboutContent.tsx:7:1
+Parsing ecmascript source code failed
+   5 | import Link from
+   6 |
+>  7 | export default function AboutContent() {
+     | ^^^^^^
+   8 |     return (
+   9 |         <div
+  10 |             className="
+
+Unexpected token `export`. Expected a string literal
+
+Import traces:
+  Client Component Browser:
+    ./components/www/Landingpage/About/AboutContent.tsx [Client Component Browser]
+    ./app/www/Home/page.tsx [Client Component Browser]
+    ./app/www/Home/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/www/Landingpage/About/AboutContent.tsx [Client Component SSR]
+    ./app/www/Home/page.tsx [Client Component SSR]
+    ./app/www/Home/page.tsx [Server Component]
+[00:08:52.084] Server  ERROR   ⨯ Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+[00:08:52.465] Browser ERROR   uncaughtError: ReferenceError: impo is not defined
+[00:08:53.157] Server  ERROR   ⨯ ./components/www/Landingpage/About/AboutContent.tsx:5:1
+Module not found: Can't resolve 'next/n'
+  3 | import { Shield, Code, Swords, Users } from 'lucide-react'
+  4 | import FeatureItem from './FeatureItem'
+> 5 | import Link from "next/n"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function AboutContent() {
+  8 |     return (
+
+Import map: aliased to module 'next' with subpath '/n' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/www/Landingpage/About/AboutContent.tsx [Client Component Browser]
+    ./app/www/Home/page.tsx [Client Component Browser]
+    ./app/www/Home/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/www/Landingpage/About/AboutContent.tsx [Client Component SSR]
+    ./app/www/Home/page.tsx [Client Component SSR]
+    ./app/www/Home/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:08:53.159] Server  ERROR   ⨯ ./components/www/Landingpage/About/AboutContent.tsx:5:1
+Module not found: Can't resolve 'next/n'
+  3 | import { Shield, Code, Swords, Users } from 'lucide-react'
+  4 | import FeatureItem from './FeatureItem'
+> 5 | import Link from "next/n"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function AboutContent() {
+  8 |     return (
+
+Import map: aliased to module 'next' with subpath '/n' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/www/Landingpage/About/AboutContent.tsx [Client Component Browser]
+    ./app/www/Home/page.tsx [Client Component Browser]
+    ./app/www/Home/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/www/Landingpage/About/AboutContent.tsx [Client Component SSR]
+    ./app/www/Home/page.tsx [Client Component SSR]
+    ./app/www/Home/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:08:53.159] Server  ERROR   ⨯ ./components/www/Landingpage/About/AboutContent.tsx:5:1
+Module not found: Can't resolve 'next/n'
+  3 | import { Shield, Code, Swords, Users } from 'lucide-react'
+  4 | import FeatureItem from './FeatureItem'
+> 5 | import Link from "next/n"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function AboutContent() {
+  8 |     return (
+
+Import map: aliased to module 'next' with subpath '/n' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/www/Landingpage/About/AboutContent.tsx [Client Component Browser]
+    ./app/www/Home/page.tsx [Client Component Browser]
+    ./app/www/Home/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/www/Landingpage/About/AboutContent.tsx [Client Component SSR]
+    ./app/www/Home/page.tsx [Client Component SSR]
+    ./app/www/Home/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:08:53.160] Server  ERROR   ⨯ ./components/www/Landingpage/About/AboutContent.tsx:5:1
+Module not found: Can't resolve 'next/n'
+  3 | import { Shield, Code, Swords, Users } from 'lucide-react'
+  4 | import FeatureItem from './FeatureItem'
+> 5 | import Link from "next/n"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function AboutContent() {
+  8 |     return (
+
+Import map: aliased to module 'next' with subpath '/n' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/www/Landingpage/About/AboutContent.tsx [Client Component Browser]
+    ./app/www/Home/page.tsx [Client Component Browser]
+    ./app/www/Home/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/www/Landingpage/About/AboutContent.tsx [Client Component SSR]
+    ./app/www/Home/page.tsx [Client Component SSR]
+    ./app/www/Home/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:08:55.409] Server  ERROR   ⨯ ./components/www/Landingpage/About/AboutContent.tsx:5:1
+Module not found: Can't resolve 'next/na'
+  3 | import { Shield, Code, Swords, Users } from 'lucide-react'
+  4 | import FeatureItem from './FeatureItem'
+> 5 | import Link from "next/na"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function AboutContent() {
+  8 |     return (
+
+Import map: aliased to module 'next' with subpath '/na' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/www/Landingpage/About/AboutContent.tsx [Client Component Browser]
+    ./app/www/Home/page.tsx [Client Component Browser]
+    ./app/www/Home/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/www/Landingpage/About/AboutContent.tsx [Client Component SSR]
+    ./app/www/Home/page.tsx [Client Component SSR]
+    ./app/www/Home/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:08:55.412] Server  ERROR   ⨯ ./components/www/Landingpage/About/AboutContent.tsx:5:1
+Module not found: Can't resolve 'next/na'
+  3 | import { Shield, Code, Swords, Users } from 'lucide-react'
+  4 | import FeatureItem from './FeatureItem'
+> 5 | import Link from "next/na"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function AboutContent() {
+  8 |     return (
+
+Import map: aliased to module 'next' with subpath '/na' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/www/Landingpage/About/AboutContent.tsx [Client Component Browser]
+    ./app/www/Home/page.tsx [Client Component Browser]
+    ./app/www/Home/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/www/Landingpage/About/AboutContent.tsx [Client Component SSR]
+    ./app/www/Home/page.tsx [Client Component SSR]
+    ./app/www/Home/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:08:55.413] Server  ERROR   ⨯ ./components/www/Landingpage/About/AboutContent.tsx:5:1
+Module not found: Can't resolve 'next/na'
+  3 | import { Shield, Code, Swords, Users } from 'lucide-react'
+  4 | import FeatureItem from './FeatureItem'
+> 5 | import Link from "next/na"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function AboutContent() {
+  8 |     return (
+
+Import map: aliased to module 'next' with subpath '/na' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/www/Landingpage/About/AboutContent.tsx [Client Component Browser]
+    ./app/www/Home/page.tsx [Client Component Browser]
+    ./app/www/Home/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/www/Landingpage/About/AboutContent.tsx [Client Component SSR]
+    ./app/www/Home/page.tsx [Client Component SSR]
+    ./app/www/Home/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:08:55.414] Server  ERROR   ⨯ ./components/www/Landingpage/About/AboutContent.tsx:5:1
+Module not found: Can't resolve 'next/na'
+  3 | import { Shield, Code, Swords, Users } from 'lucide-react'
+  4 | import FeatureItem from './FeatureItem'
+> 5 | import Link from "next/na"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function AboutContent() {
+  8 |     return (
+
+Import map: aliased to module 'next' with subpath '/na' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/www/Landingpage/About/AboutContent.tsx [Client Component Browser]
+    ./app/www/Home/page.tsx [Client Component Browser]
+    ./app/www/Home/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/www/Landingpage/About/AboutContent.tsx [Client Component SSR]
+    ./app/www/Home/page.tsx [Client Component SSR]
+    ./app/www/Home/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:08:57.044] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:57.117] Server  ERROR   ⨯ ./components/www/Landingpage/About/AboutContent.tsx:5:1
+Module not found: Can't resolve 'next/navigat'
+  3 | import { Shield, Code, Swords, Users } from 'lucide-react'
+  4 | import FeatureItem from './FeatureItem'
+> 5 | import Link from "next/navigat"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function AboutContent() {
+  8 |     return (
+
+Import map: aliased to module 'next' with subpath '/navigat' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/www/Landingpage/About/AboutContent.tsx [Client Component Browser]
+    ./app/www/Home/page.tsx [Client Component Browser]
+    ./app/www/Home/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/www/Landingpage/About/AboutContent.tsx [Client Component SSR]
+    ./app/www/Home/page.tsx [Client Component SSR]
+    ./app/www/Home/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:08:57.118] Server  ERROR   ⨯ ./components/www/Landingpage/About/AboutContent.tsx:5:1
+Module not found: Can't resolve 'next/navigat'
+  3 | import { Shield, Code, Swords, Users } from 'lucide-react'
+  4 | import FeatureItem from './FeatureItem'
+> 5 | import Link from "next/navigat"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function AboutContent() {
+  8 |     return (
+
+Import map: aliased to module 'next' with subpath '/navigat' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/www/Landingpage/About/AboutContent.tsx [Client Component Browser]
+    ./app/www/Home/page.tsx [Client Component Browser]
+    ./app/www/Home/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/www/Landingpage/About/AboutContent.tsx [Client Component SSR]
+    ./app/www/Home/page.tsx [Client Component SSR]
+    ./app/www/Home/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:08:57.119] Server  ERROR   ⨯ ./components/www/Landingpage/About/AboutContent.tsx:5:1
+Module not found: Can't resolve 'next/navigat'
+  3 | import { Shield, Code, Swords, Users } from 'lucide-react'
+  4 | import FeatureItem from './FeatureItem'
+> 5 | import Link from "next/navigat"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function AboutContent() {
+  8 |     return (
+
+Import map: aliased to module 'next' with subpath '/navigat' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/www/Landingpage/About/AboutContent.tsx [Client Component Browser]
+    ./app/www/Home/page.tsx [Client Component Browser]
+    ./app/www/Home/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/www/Landingpage/About/AboutContent.tsx [Client Component SSR]
+    ./app/www/Home/page.tsx [Client Component SSR]
+    ./app/www/Home/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:08:57.125] Server  ERROR   ⨯ ./components/www/Landingpage/About/AboutContent.tsx:5:1
+Module not found: Can't resolve 'next/navigat'
+  3 | import { Shield, Code, Swords, Users } from 'lucide-react'
+  4 | import FeatureItem from './FeatureItem'
+> 5 | import Link from "next/navigat"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function AboutContent() {
+  8 |     return (
+
+Import map: aliased to module 'next' with subpath '/navigat' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/www/Landingpage/About/AboutContent.tsx [Client Component Browser]
+    ./app/www/Home/page.tsx [Client Component Browser]
+    ./app/www/Home/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/www/Landingpage/About/AboutContent.tsx [Client Component SSR]
+    ./app/www/Home/page.tsx [Client Component SSR]
+    ./app/www/Home/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:08:57.168] Browser ERROR   ./components/www/Landingpage/About/AboutContent.tsx:5:1
+Module not found: Can't resolve 'next/na'
+  3 | import { Shield, Code, Swords, Users } from 'lucide-react'
+  4 | import FeatureItem from './FeatureItem'
+> 5 | import Link from "next/na"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function AboutContent() {
+  8 |     return (
+
+Import map: aliased to module 'next' with subpath '/na' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./components/www/Landingpage/About/AboutContent.tsx [Client Component Browser]
+    ./app/www/Home/page.tsx [Client Component Browser]
+    ./app/www/Home/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/www/Landingpage/About/AboutContent.tsx [Client Component SSR]
+    ./app/www/Home/page.tsx [Client Component SSR]
+    ./app/www/Home/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:08:57.412] Browser ERROR   ./components/www/Landingpage/About/AboutContent.tsx:5:1
+Module not found: Can't resolve 'next/navigat'
+  3 | import { Shield, Code, Swords, Users } from 'lucide-react'
+  4 | import FeatureItem from './FeatureItem'
+> 5 | import Link from "next/navigat"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function AboutContent() {
+  8 |     return (
+
+Import map: aliased to module 'next' with subpath '/navigat' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./components/www/Landingpage/About/AboutContent.tsx [Client Component Browser]
+    ./app/www/Home/page.tsx [Client Component Browser]
+    ./app/www/Home/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/www/Landingpage/About/AboutContent.tsx [Client Component SSR]
+    ./app/www/Home/page.tsx [Client Component SSR]
+    ./app/www/Home/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:08:57.922] Browser ERROR   uncaughtError: Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+
+Check the render method of `AboutContent`.
+[00:08:57.940] Server  LOG     ✓ Compiled in 53ms
+[00:08:58.262] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:08:58.808] Server  ERROR   ⨯ Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object.
+[00:09:02.569] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:02.569] Browser ERROR   uncaughtError: Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object.
+
+Check the render method of `AboutContent`.
+[00:09:06.985] Server  LOG     ✓ Compiled in 63ms
+[00:09:07.150] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:09:07.881] Server  ERROR   ⨯ Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+[00:09:10.332] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:11.287] Browser ERROR   uncaughtError: Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+
+Check the render method of `AboutContent`.
+[00:09:11.448] Server  LOG     ✓ Compiled in 35ms
+[00:09:11.763] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:09:12.669] Server  ERROR   ⨯ Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object.
+[00:09:15.510] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:15.510] Browser ERROR   uncaughtError: Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object.
+
+Check the render method of `AboutContent`.
+[00:09:45.788] Server  LOG     ✓ Compiled in 135ms
+[00:09:46.016] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:09:49.193] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:49.755] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <Page params={Promise} searchParams={Promise}>
+      <div className="w-full">
+        <section>
+        <section className="relative w...">
+          <div className="max-w-6xl ...">
+            <h2>
+            <AnimatedFoundersUse>
+              <AnimatedFounders testimonials={[...]}>
+                <div className="max-w-sm m...">
+                  <div className="relative g...">
+                    <div>
+                      <div className="relative h...">
+                        <AnimatePresence>
+                          <PresenceChild isPresent={true} initial={undefined} custom={undefined} ...>
+                            <motion.div initial={{opacity:0, ...}} animate={{opacity:1,scale:1,z:0, ...}} ...>
+                              <div
+                                className="absolute inset-0 origin-bottom"
+                                style={{
++                                 opacity: 0
+-                                 opacity: "0"
++                                 transform: "translateZ(-100px) scale(0.9) rotate(-7deg)"
+-                                 transform: "translateZ(-100px) scale(0.9) rotate(9deg)"
+                                }}
+                                ref={function useMotionRef.useCallback}
+                              >
+                          <PresenceChild isPresent={true} initial={undefined} custom={undefined} ...>
+                            <motion.div initial={{opacity:0, ...}} animate={{opacity:0.7, ...}} exit={{opacity:0, ...}} ...>
+                              <div
+                                className="absolute inset-0 origin-bottom"
+                                style={{
++                                 opacity: 0
+-                                 opacity: "0"
++                                 transform: "translateZ(-100px) scale(0.9) rotate(3deg)"
+-                                 transform: "translateZ(-100px) scale(0.9) rotate(2deg)"
+                                }}
+                                ref={function useMotionRef.useCallback}
+                              >
+                          <PresenceChild isPresent={true} initial={undefined} custom={undefined} ...>
+                            <motion.div initial={{opacity:0, ...}} animate={{opacity:0.7, ...}} exit={{opacity:0, ...}} ...>
+                              <div
+                                className="absolute inset-0 origin-bottom"
+                                style={{
++                                 opacity: 0
+-                                 opacity: "0"
++                                 transform: "translateZ(-100px) scale(0.9) rotate(-4deg)"
+-                                 transform: "translateZ(-100px) scale(0.9) rotate(8deg)"
+                                }}
+                                ref={function useMotionRef.useCallback}
+                              >
+                    ...
+        ...
+
+[00:10:27.526] Server  LOG     ✓ Compiled in 47ms
+[00:10:31.343] Server  LOG     ✓ Compiled in 52ms
+[00:10:33.993] Server  LOG     ✓ Compiled in 53ms
+[00:10:35.048] Server  LOG     ✓ Compiled in 41ms
+[00:10:42.079] Server  LOG     ✓ Compiled in 38ms
+[00:10:46.116] Server  LOG     ✓ Compiled in 98ms
+[00:10:46.613] Browser ERROR   uncaughtError: Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object.
+
+Check the render method of `AboutContent`.
+[00:10:48.705] Server  LOG     ✓ Compiled in 65ms
+[00:10:48.950] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:10:49.197] Server  ERROR   ⨯ ReferenceError: Link is not defined
+[00:10:49.242] Browser ERROR   uncaughtError: ReferenceError: Link is not defined
+[00:10:54.322] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:10:57.525] Server  LOG     ✓ Compiled in 61ms
+[00:10:58.037] Browser ERROR   uncaughtError: ReferenceError: Link is not defined
+[00:10:58.037] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:11:03.692] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:11:04.318] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <Page params={Promise} searchParams={Promise}>
+      <div className="w-full">
+        <section>
+        <section className="relative w...">
+          <div className="max-w-6xl ...">
+            <h2>
+            <AnimatedFoundersUse>
+              <AnimatedFounders testimonials={[...]}>
+                <div className="max-w-sm m...">
+                  <div className="relative g...">
+                    <div>
+                      <div className="relative h...">
+                        <AnimatePresence>
+                          <PresenceChild isPresent={true} initial={undefined} custom={undefined} ...>
+                            <motion.div initial={{opacity:0, ...}} animate={{opacity:1,scale:1,z:0, ...}} ...>
+                              <div
+                                className="absolute inset-0 origin-bottom"
+                                style={{
++                                 opacity: 0
+-                                 opacity: "0"
++                                 transform: "translateZ(-100px) scale(0.9) rotate(6deg)"
+-                                 transform: "translateZ(-100px) scale(0.9) rotate(5deg)"
+                                }}
+                                ref={function useMotionRef.useCallback}
+                              >
+                          <PresenceChild isPresent={true} initial={undefined} custom={undefined} ...>
+                            <motion.div initial={{opacity:0, ...}} animate={{opacity:0.7, ...}} exit={{opacity:0, ...}} ...>
+                              <div
+                                className="absolute inset-0 origin-bottom"
+                                style={{
++                                 opacity: 0
+-                                 opacity: "0"
++                                 transform: "translateZ(-100px) scale(0.9) rotate(-2deg)"
+-                                 transform: "translateZ(-100px) scale(0.9) rotate(4deg)"
+                                }}
+                                ref={function useMotionRef.useCallback}
+                              >
+                          <PresenceChild isPresent={true} initial={undefined} custom={undefined} ...>
+                            <motion.div initial={{opacity:0, ...}} animate={{opacity:0.7, ...}} exit={{opacity:0, ...}} ...>
+                              <div
+                                className="absolute inset-0 origin-bottom"
+                                style={{
++                                 opacity: 0
+-                                 opacity: "0"
++                                 transform: "translateZ(-100px) scale(0.9) rotate(6deg)"
+-                                 transform: "translateZ(-100px) scale(0.9) rotate(2deg)"
+                                }}
+                                ref={function useMotionRef.useCallback}
+                              >
+                    ...
+        ...
+
+[00:11:15.711] Server  LOG     ✓ Compiled in 45ms
+[00:11:30.496] Browser LOG     Fetched Hall of Fame data: []
+[00:11:30.496] Browser LOG     Fetched Hall of Fame data: []

@@ -214,7 +214,7 @@ export function LiveEventsData() {
               name="imguri"
               value={formData.imguri}
               onChange={handleInputChange}
-              placeholder="Drive link of the member's image"
+              placeholder="Cloudinary link of the member's image"
               required
             />
           </Field>

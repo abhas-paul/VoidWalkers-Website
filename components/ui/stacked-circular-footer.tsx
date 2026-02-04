@@ -22,23 +22,11 @@ function StackedCircularFooter() {
             />
           </div>
           <div className="mb-8 flex space-x-4">
-            <Button variant="outline" size="icon" className="cursor-pointer rounded-full">
-              <Facebook className="h-4 w-4" />
-              <span className="sr-only">Facebook</span>
-            </Button>
-            <Button variant="outline" size="icon" className="cursor-pointer rounded-full">
-              <Twitter className="h-4 w-4" />
-              <span className="sr-only">Twitter</span>
-            </Button>
             <Button variant="outline" size="icon" className="cursor-pointer rounded-full"
             onClick={() => router.push("https://www.instagram.com/official.voidwalkers/")}
             >
               <Instagram className="h-4 w-4" />
               <span className="sr-only">Instagram</span>
-            </Button>
-            <Button variant="outline" size="icon" className="cursor-pointer rounded-full">
-              <Linkedin className="h-4 w-4" />
-              <span className="sr-only">LinkedIn</span>
             </Button>
           </div>
           <div className="text-center">

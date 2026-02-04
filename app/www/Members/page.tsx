@@ -1,6 +1,6 @@
 "use client";
 
-// import MemberDataCards from "@/components/www/Members/MemberDataCards";
+import MemberDataCards from "@/components/www/Members/MemberDataCards";
 
 export default function Page() {
     return (
@@ -26,7 +26,7 @@ export default function Page() {
             <section className="mt-16 sm:mt-20 md:mt-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
                 {/* RESPONSIVE GRID */}
-                {/* <MemberDataCards /> */}
+                <MemberDataCards />
             </section>
 
         </main>

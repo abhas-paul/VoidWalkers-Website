@@ -1,0 +1,7 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/www/HallofFame/page": "app/www/HallofFame/page.js",
+  "/www/Home/page": "app/www/Home/page.js",
+  "/www/LiveEvents/page": "app/www/LiveEvents/page.js",
+  "/www/Members/page": "app/www/Members/page.js"
+}

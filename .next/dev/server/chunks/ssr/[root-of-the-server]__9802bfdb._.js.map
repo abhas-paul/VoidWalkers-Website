@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 22, "column": 0}, "map": {"version":3,"sources":["file:///workspaces/VoidWalkers-Website/app/page.tsx"],"sourcesContent":["import DarkVeil from \"@/components/www/Landingpage/DarkVeil\";\n\nexport default function Page() {\n    return <>\n        <div>\n        </div>\n    </>\n}"],"names":[],"mappings":";;;;;;AAEe,SAAS;IACpB,qBAAO;kBACH,cAAA,+YAAC;;;;;;AAGT"}}]
+}
