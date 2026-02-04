@@ -1,0 +1,69 @@
+"use client"
+
+import { SidebarTrigger } from "@/components/ui/sidebar"
+import { useMembers } from "@/components/blocks/MemberCard/useMembers"
+import { MemberCard } from "@/components/blocks/MemberCard/MemberCard"
+import { EditMemberDialog } from "@/components/blocks/MemberCard/EditMemberDialog"
+import { DeleteConfirmation } from "@/components/blocks/admin-data/DeleteConfirmation"
+
+export default function Page() {
+    const {
+        members,
+        editingId,
+        editData,
+        editDialogOpen,
+        setEditDialogOpen,
+        deleteConfirmOpen,
+        setDeleteConfirmOpen,
+        deletingMemberId,
+        setDeletingMemberId,
+        handlers,
+    } = useMembers();
+
+    return (
+        <>
+            <div className="p-2 md:p-6 lg:p-10 max-w-full overflow-x-auto bg-background min-h-screen">
+                <SidebarTrigger style={{ cursor: 'pointer' }} />
+
+                <h1 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6">Members Dashboard</h1>
+                <p className="mb-4 md:mb-6 text-base md:text-lg">
+                    Welcome to the admin dashboard. Here you can manage your application.
+                </p>
+
+                <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    {Array.isArray(members) && members.length > 0 ? (
+                        members.map((member) => (
+                            <MemberCard
+                                key={member.id}
+                                member={member}
+                                onEdit={handlers.edit}
+                                onDelete={handlers.deleteClick}
+                            />
+                        ))
+                    ) : (
+                        <div className="col-span-full text-center text-gray-500 py-8">No members found.</div>
+                    )}
+                </div>
+
+                {/* Delete Confirmation Alert */}
+                <DeleteConfirmation
+                    open={deleteConfirmOpen}
+                    onConfirm={handlers.confirmDelete}
+                    onCancel={() => {
+                        setDeleteConfirmOpen(false);
+                        setDeletingMemberId(null);
+                    }}
+                />
+
+                {/* Edit Dialog */}
+                <EditMemberDialog
+                    open={editDialogOpen}
+                    onOpenChange={setEditDialogOpen}
+                    editData={editData}
+                    onInputChange={handlers.inputChange}
+                    onSave={handlers.save}
+                />
+            </div>
+        </>
+    )
+}
