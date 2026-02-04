@@ -10,21 +10,35 @@ import {
     CardTitle,
 } from '@/components/ui/card';
 
+type LiveEvent = {
+    id: number | string;
+    Topic: string;
+    Description: string;
+    Judges: string;
+    Mode: string;
+    Prizepool: string;
+    Requirement: string;
+    Sponsors: string;
+    Venue: string;
+    imguri: string;
+};
 
 const LiveEventsCards = () => {
-    const [LiveEvents, setLiveEvents] = useState<LiveEvents[]>([]);
+    const [LiveEvents, setLiveEvents] = useState<LiveEvent[]>([]);
 
     useEffect(() => {
-        const LiveEvents = async () => {
+        const loadLiveEvents = async () => {
             try {
-                const data: LiveEvents[] = await fetchEvents();
-                setLiveEvents(data);
+                const data = await fetchEvents() as LiveEvent[] | null;
+                if (data) {
+                    setLiveEvents(data);
+                }
             } catch (error) {
                 console.error(error);
             }
         };
 
-        LiveEvents();
+        void loadLiveEvents();
     }, []);
 
     return (

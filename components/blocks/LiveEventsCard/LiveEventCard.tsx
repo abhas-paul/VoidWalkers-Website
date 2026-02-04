@@ -7,8 +7,15 @@ import {
     CardHeader,
     CardTitle,
 } from "@/components/ui/card"
+import type { EventItem } from "@/components/blocks/LiveEventsCard/useEvents"
 
-export function LiveEventCard({ event, onEdit, onDelete }) {
+type LiveEventCardProps = {
+    event: EventItem
+    onEdit: (event: EventItem) => void
+    onDelete: (id: EventItem["id"]) => void
+}
+
+export function LiveEventCard({ event, onEdit, onDelete }: LiveEventCardProps) {
     return (
         <Card className="flex flex-col h-full">
             <CardHeader className="pb-3">

@@ -1,9 +1,22 @@
 import SupaClient from "@/lib/supabase/createClient"
 
-export async function handleSave(editingId, editData, data, setData, setEditingId, setEditDialogOpen) {
-    const { error } = await SupaClient.from('hall-of-fame').update(editData).eq('id', editingId);
+import type { Dispatch, SetStateAction } from "react"
+import type { HallOfFameItem } from "@/components/blocks/HallOfFameCard/useHallOfFame"
+
+export async function handleSave(
+    editingId: HallOfFameItem["id"] | null,
+    editData: Partial<HallOfFameItem>,
+    data: HallOfFameItem[],
+    setData: Dispatch<SetStateAction<HallOfFameItem[]>>,
+    setEditingId: Dispatch<SetStateAction<HallOfFameItem["id"] | null>>,
+    setEditDialogOpen: Dispatch<SetStateAction<boolean>>,
+) {
+    if (!editingId) return
+
+    const { error } = await SupaClient.from("hall-of-fame").update(editData).eq("id", editingId);
+
     if (!error) {
-        setData(data.map(item => item.id === editingId ? editData : item));
+        setData(data.map((item) => (item.id === editingId ? { ...item, ...editData } : item)));
         setEditingId(null);
         setEditDialogOpen(false);
     } else {

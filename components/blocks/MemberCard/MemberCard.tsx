@@ -7,8 +7,15 @@ import {
     CardHeader,
     CardTitle,
 } from "@/components/ui/card"
+import type { MemberItem } from "@/components/blocks/MemberCard/useMembers"
 
-export function MemberCard({ member, onEdit, onDelete }) {
+type MemberCardProps = {
+    member: MemberItem
+    onEdit: (member: MemberItem) => void
+    onDelete: (id: MemberItem["id"]) => void
+}
+
+export function MemberCard({ member, onEdit, onDelete }: MemberCardProps) {
     return (
         <Card className="flex flex-col h-full">
             <CardHeader className="pb-3">

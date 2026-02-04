@@ -10,6 +10,18 @@ import {
     CardTitle,
 } from '@/components/ui/card';
 
+type Member = {
+    id: number | string;
+    name: string;
+    nickname: string;
+    specialmessage: string;
+    funfact: string;
+    hackathonRole: string;
+    ctfRole: string;
+    Strengths: string;
+    history: string;
+    imgUri: string;
+};
 
 const MemberDataCards = () => {
     const [members, setMembers] = useState<Member[]>([]);
@@ -17,8 +29,10 @@ const MemberDataCards = () => {
     useEffect(() => {
         const getMembers = async () => {
             try {
-                const data: Member[] = await fetchMembers();
-                setMembers(data);
+                const data = await fetchMembers() as Member[] | null;
+                if (data) {
+                    setMembers(data);
+                }
             } catch (error) {
                 console.error(error);
             }
@@ -34,7 +48,7 @@ const MemberDataCards = () => {
                     key={member.id}
                     className="bg-black/40 border border-purple-500/20 backdrop-blur-md text-white"
                 >
-                    <CardHeader className="items-center text-center">
+                    <CardHeader className="flex flex-col items-center text-center">
                         <Image
                             src={member.imgUri}
                             alt={member.name}

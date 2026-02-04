@@ -1,6 +1,16 @@
 import { AlertDialog, AlertDialogContent, AlertDialogHeader, AlertDialogTitle, AlertDialogFooter, AlertDialogCancel, AlertDialogAction } from "@/components/ui/alert-dialog"
+import type { ChangeEvent } from "react"
+import type { HallOfFameItem } from "@/components/blocks/HallOfFameCard/useHallOfFame"
 
-export function EditHallOfFameDialog({ open, onOpenChange, editData, onInputChange, onSave }) {
+type EditHallOfFameDialogProps = {
+    open: boolean
+    onOpenChange: (open: boolean) => void
+    editData: Partial<HallOfFameItem>
+    onInputChange: (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => void
+    onSave: () => void
+}
+
+export function EditHallOfFameDialog({ open, onOpenChange, editData, onInputChange, onSave }: EditHallOfFameDialogProps) {
     return (
         <AlertDialog open={open} onOpenChange={onOpenChange}>
             <AlertDialogContent className="max-w-lg w-full">

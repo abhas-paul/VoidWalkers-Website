@@ -1,6 +1,16 @@
 import { AlertDialog, AlertDialogContent, AlertDialogHeader, AlertDialogTitle, AlertDialogFooter, AlertDialogCancel, AlertDialogAction } from "@/components/ui/alert-dialog"
+import type { ChangeEvent } from "react"
+import type { EventItem } from "@/components/blocks/LiveEventsCard/useEvents"
 
-export function EditEventDialog({ open, onOpenChange, editData, onInputChange, onSave }) {
+type EditEventDialogProps = {
+    open: boolean
+    onOpenChange: (open: boolean) => void
+    editData: Partial<EventItem>
+    onInputChange: (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => void
+    onSave: () => void
+}
+
+export function EditEventDialog({ open, onOpenChange, editData, onInputChange, onSave }: EditEventDialogProps) {
     return (
         <AlertDialog open={open} onOpenChange={onOpenChange}>
             <AlertDialogContent className="max-w-lg w-full">

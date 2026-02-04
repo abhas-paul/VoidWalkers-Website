@@ -12,7 +12,7 @@ import {
 import { Input } from "@/components/ui/input"
 import { useState } from "react"
 import { useRouter } from "next/navigation"
-import  supabase  from "@/lib/supabase/createClient"
+import { createClient } from "@/lib/supabase/createBrowserClient"
 
 export function LoginForm({
   className,
@@ -30,6 +30,7 @@ export function LoginForm({
     setError(null)
     setLoading(true)
 
+    const supabase = createClient()
     const { error } = await supabase.auth.signInWithPassword({
       email,
       password,
@@ -42,7 +43,8 @@ export function LoginForm({
       return
     }
 
-    // ✅ successful login → redirect
+    // ✅ successful login → refresh to ensure cookies are set, then redirect
+    router.refresh()
     router.push("/admin-site/dashboard")
   }
 

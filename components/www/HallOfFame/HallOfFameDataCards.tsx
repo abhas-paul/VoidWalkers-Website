@@ -10,22 +10,32 @@ import {
     CardTitle,
 } from '@/components/ui/card';
 
+type HallOfFame = {
+    id: number | string;
+    Topic: string;
+    Fametype: string;
+    Date: string;
+    Bio: string;
+    imguri: string;
+};
 
 const HallOfFameDataCards = () => {
-    const [HallofFame, setHallofFame] = useState<HallofFame[]>([]);
+    const [HallofFame, setHallofFame] = useState<HallOfFame[]>([]);
 
     useEffect(() => {
-        const HallofFame = async () => {
+        const loadHallofFame = async () => {
             try {
-                const data: HallofFame[] = await fetchHallOfFame();
-                setHallofFame(data);
+                const data = await fetchHallOfFame() as HallOfFame[] | null;
+                if (data) {
+                    setHallofFame(data);
+                }
                 console.log('Fetched Hall of Fame data:', data);
             } catch (error) {
                 console.error(error);
             }
         };
 
-        HallofFame();
+        void loadHallofFame();
     }, []);
 
     return (

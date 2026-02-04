@@ -1,6 +1,16 @@
 import { AlertDialog, AlertDialogContent, AlertDialogHeader, AlertDialogTitle, AlertDialogFooter, AlertDialogCancel, AlertDialogAction } from "@/components/ui/alert-dialog"
+import type { ChangeEvent } from "react"
+import type { MemberItem } from "@/components/blocks/MemberCard/useMembers"
 
-export function EditMemberDialog({ open, onOpenChange, editData, onInputChange, onSave }) {
+type EditMemberDialogProps = {
+    open: boolean
+    onOpenChange: (open: boolean) => void
+    editData: Partial<MemberItem>
+    onInputChange: (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => void
+    onSave: () => void
+}
+
+export function EditMemberDialog({ open, onOpenChange, editData, onInputChange, onSave }: EditMemberDialogProps) {
     return (
         <AlertDialog open={open} onOpenChange={onOpenChange}>
             <AlertDialogContent className="max-w-lg w-full">

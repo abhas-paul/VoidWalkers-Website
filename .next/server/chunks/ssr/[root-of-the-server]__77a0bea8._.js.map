@@ -1,1 +1,0 @@
-{"version":3,"sources":["../../../../app/www/HallofFame/page.tsx"],"sourcesContent":["export default function Page() {\r\n    return (\r\n        <>\r\n            Hello\r\n        </>\r\n    )\r\n}"],"names":[],"mappings":"+WAAe,SAAS,IACpB,MACI,CAAA,EAAA,EAAA,GAAA,EAAA,EAAA,QAAA,CAAA,UAAE,SAIV"}

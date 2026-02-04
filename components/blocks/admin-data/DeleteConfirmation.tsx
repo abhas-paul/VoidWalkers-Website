@@ -6,7 +6,13 @@ import {
     AlertTitle,
 } from "@/components/ui/alert"
 
-export function DeleteConfirmation({ open, onConfirm, onCancel }) {
+type DeleteConfirmationProps = {
+    open: boolean
+    onConfirm: () => void
+    onCancel: () => void
+}
+
+export function DeleteConfirmation({ open, onConfirm, onCancel }: DeleteConfirmationProps) {
     if (!open) return null;
 
     return (

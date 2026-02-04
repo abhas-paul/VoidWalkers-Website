@@ -7,8 +7,15 @@ import {
     CardHeader,
     CardTitle,
 } from "@/components/ui/card"
+import type { HallOfFameItem } from "@/components/blocks/HallOfFameCard/useHallOfFame"
 
-export function HallofFameCard({ fame, onEdit, onDelete }) {
+type HallofFameCardProps = {
+    fame: HallOfFameItem
+    onEdit: (item: HallOfFameItem) => void
+    onDelete: (id: HallOfFameItem["id"]) => void
+}
+
+export function HallofFameCard({ fame, onEdit, onDelete }: HallofFameCardProps) {
     return (
         <Card className="flex flex-col h-full">
             <CardHeader className="pb-3">

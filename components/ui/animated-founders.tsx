@@ -38,15 +38,17 @@ export const AnimatedFounders = ({
   };
 
   useEffect(() => {
-    if (autoplay) {
-      const interval = setInterval(handleNext, 5000);
-      return () => clearInterval(interval);
-    }
-  }, [autoplay]);
+    if (!autoplay) return;
 
-  const randomRotateY = () => {
-    return Math.floor(Math.random() * 21) - 10;
-  };
+    const interval = setInterval(() => {
+      setActive((prev) => (prev + 1) % testimonials.length);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [autoplay, testimonials.length]);
+
+  const baseAngles = [-10, -5, 0, 5, 10];
+  const rotationAngles = testimonials.map((_, index) => baseAngles[index % baseAngles.length]);
 
   return (
     <div className={cn("max-w-sm md:max-w-4xl mx-auto px-4 md:px-8 lg:px-12 py-20", className)}>
@@ -61,13 +63,13 @@ export const AnimatedFounders = ({
                     opacity: 0,
                     scale: 0.9,
                     z: -100,
-                    rotate: randomRotateY(),
+                    rotate: rotationAngles[index],
                   }}
                   animate={{
                     opacity: isActive(index) ? 1 : 0.7,
                     scale: isActive(index) ? 1 : 0.95,
                     z: isActive(index) ? 0 : -100,
-                    rotate: isActive(index) ? 0 : randomRotateY(),
+                    rotate: isActive(index) ? 0 : rotationAngles[index],
                     zIndex: isActive(index)
                       ? 999
                       : testimonials.length + 2 - index,
@@ -77,7 +79,7 @@ export const AnimatedFounders = ({
                     opacity: 0,
                     scale: 0.9,
                     z: 100,
-                    rotate: randomRotateY(),
+                    rotate: rotationAngles[index],
                   }}
                   transition={{
                     duration: 0.4,
