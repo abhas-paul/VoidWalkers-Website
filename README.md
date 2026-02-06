@@ -1,1 +1,2 @@
 # VoidWalkers-Website
+/thumbnail.png
